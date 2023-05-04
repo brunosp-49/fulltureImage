@@ -1,20 +1,21 @@
 import { StatusBar } from "expo-status-bar";
-import { SafeAreaView } from "react-native";
+import { useEffect, useState } from "react";
+import { Alert, SafeAreaView } from "react-native";
 import {
   Image,
   StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
-  View,
 } from "react-native";
+import { api } from "../assets/api/req";
 
 export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
       <Image source={require("../assets/logo.png")} />
       <TextInput />
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=> {}}>
         <Text>Buscar</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
@@ -30,15 +31,3 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
-{
-  /*
-<View></View>
-<Text></Text>
-<StatusBar /> 
-<TouchableOpacity></TouchableOpacity>
-<TextInput />
-<FlatList />
-<Image />
-*/
-}

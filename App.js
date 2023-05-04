@@ -1,7 +1,7 @@
-import Home from "./src/view/Home";
+import { Router } from "./src/Router";
 
 export default function App() {
   return(
-    <Home/>
+    <Router />
   )
 }
